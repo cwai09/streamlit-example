@@ -12,6 +12,14 @@ This app predicts the **Iris flower** type!
 
 st.sidebar.header('User Input Parameters')
 
+
+from PIL import Image
+image = Image.open('iris2.png')
+
+st.image(image, caption='Iris Sepal and Petal')
+
+
+
 def user_input_features():
     sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
     sepal_width = st.sidebar.slider('Sepal width', 2.0, 4.4, 3.4)
@@ -42,18 +50,6 @@ prediction_proba = clf.predict_proba(df)
 st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
 
-st.subheader('Prediction')
-st.write(iris.target_names[prediction])
-#st.write(prediction)
-
-st.subheader('Prediction Probability')
-st.write(prediction_proba)
-
-from PIL import Image
-image = Image.open('iris2.png')
-
-st.image(image, caption='Iris Sepal and Petal')
-
 
 from PIL import Image
 image = Image.open('iris.png')
@@ -61,4 +57,12 @@ image = Image.open('iris.png')
 st.image(image, caption='Iris Species')
 
 
-st.info('Updated on August 18,2022', icon="ℹ️")
+st.subheader('Prediction')
+st.write(iris.target_names[prediction])
+#st.write(prediction)
+
+st.subheader('Prediction Probability')
+st.write(prediction_proba)
+
+
+st.info('Updated on August 18, 2022', icon="ℹ️")

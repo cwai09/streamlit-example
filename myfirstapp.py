@@ -1,17 +1,7 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 
-st.header("App1: Attendence of Housekeeping Team")
-st.write(pd.DataFrame({
-    'Intplan': ['yes', 'yes', 'yes', 'no'],
-    'Churn Status': [0, 0, 0, 1]
-}))
-
-import streamlit as st
-import pandas as pd
-
-st.header("App2: Attendence of Chefs")
+st.header("App1: Attendence of Chefs")
 
 st.write('Before you continue, please read the [terms and conditions](https://www.gnu.org/licenses/gpl-3.0.en.html)')
 show = st.checkbox('I agree the terms and conditions')
@@ -25,7 +15,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.header("App3: Room rate for October 2022")
+st.header("App2: Room rate for October 2022")
 
 option = st.sidebar.selectbox(
     'Select a mini project',
@@ -59,7 +49,7 @@ import numpy as np
 import pandas as pd
 import time
 
-st.header("App4: Room Turnover Rate")
+st.header("App3: Room Turnover Rate")
 
 option = st.sidebar.selectbox(
     'Select a mini project',

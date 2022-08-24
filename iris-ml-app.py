@@ -57,6 +57,6 @@ st.image(image, caption='Iris Species')
 
 chart_data = pd.DataFrame(
      df,
-     columns=["sepal_length", "sepal_width", "petal_length", "petal_width"])
+     columns=["setosa", "versicolor", "virginica"])
 
 st.bar_chart(chart_data)

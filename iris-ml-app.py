@@ -26,13 +26,6 @@ def user_input_features():
 
 df = user_input_features()
 
-
-
-from PIL import Image
-image = Image.open('iris2.png')
-
-st.image(image, caption='Iris Sepal and Petal')
-
 st.subheader('User Input parameters')
 st.write(df)
 
@@ -45,6 +38,13 @@ clf.fit(X, Y)
 
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
+
+
+from PIL import Image
+image = Image.open('iris2.png')
+
+st.image(image, caption='Iris Sepal and Petal')
+
 
 st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)

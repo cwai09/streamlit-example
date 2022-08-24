@@ -53,3 +53,12 @@ from PIL import Image
 image = Image.open('iris.png')
 
 st.image(image, caption='Iris Species')
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+arr = np.random.normal(1, 1, size=100)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=10)
+
+st.pyplot(fig)

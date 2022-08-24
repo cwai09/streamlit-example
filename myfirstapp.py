@@ -1,4 +1,3 @@
-%%writefile myfirstapp.py
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -9,7 +8,7 @@ st.write(pd.DataFrame({
     'Churn Status': [0, 0, 0, 1]
 }))
 
-%%writefile myfirstapp.py
+
 import streamlit as st
 import pandas as pd
 
@@ -23,7 +22,7 @@ if show:
     'Churn Status': [0, 0, 0, 1]
 }))
     
-%%writefile myfirstapp.py
+
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -57,7 +56,7 @@ else:
         'Churn Status': [0, 0, 0, 1]
         }))
         
- %%writefile myfirstapp.py
+
 import streamlit as st
 import numpy as np
 import pandas as pd

@@ -5,6 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Simple Iris Flower Prediction App
+# Lai Chuei Wai - first application
 
 This app predicts the **Iris flower** type!
 """)

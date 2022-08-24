@@ -52,13 +52,13 @@ st.write(prediction_proba)
 from PIL import Image
 image = Image.open('iris2.png')
 
-st.image(image, caption='Iris Species')
+st.image(image, caption='Iris Sepal and Petal')
 
 
 from PIL import Image
 image = Image.open('iris.png')
 
-st.image(image, caption='Iris Sepal and Petal')
+st.image(image, caption='Iris Species')
 
 
 st.info('Updated on August 18,2022', icon="ℹ️")

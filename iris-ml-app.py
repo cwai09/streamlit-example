@@ -50,13 +50,12 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 from PIL import Image
-image = Image.open('iris.png')
+image = Image.open('iris2.png')
 
 st.image(image, caption='Iris Species')
 
 
-chart_data = pd.DataFrame(
-     df,
-     columns=["setosa", "versicolor", "virginica"])
+from PIL import Image
+image = Image.open('iris.png')
 
-st.bar_chart(chart_data)
+st.image(image, caption='Iris Species')

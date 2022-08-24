@@ -54,11 +54,9 @@ image = Image.open('iris.png')
 
 st.image(image, caption='Iris Species')
 
-import matplotlib.pyplot as plt
-import numpy as np
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=10)
+chart_data = pd.DataFrame(
+     df,
+     columns=["sepal_length", "sepal_width", "petal_length", "petal_width"])
 
-st.pyplot(fig)
+st.bar_chart(chart_data)
